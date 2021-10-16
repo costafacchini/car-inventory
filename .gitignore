@@ -1,0 +1,6 @@
+.tool-versions
+/.bundle
+/log/*.log
+/tmp
+/config/application.yml
+*.orig
