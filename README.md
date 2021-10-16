@@ -49,3 +49,28 @@ $ bundle
 
 username: admin
 password: secret
+
+## Decisions
+
+The project was built following the pattern of a Rails project. I first built the car routine to be delivered to the admin users. So they can evaluate and give feedback if the data is available for the cars.
+
+Then I implemented an authentication in a simple way so that the project could be made available to common users without requiring authentication.
+
+In the next step I would develop the dealership part so users could know where the car is located.
+
+In the next step I would develop more complete authentication.
+
+## About the time
+
+3 hours
+
+## Improvements
+
+- [ ] Create dealership
+- [ ] Add relationship between car and dealership
+- [ ] Tests to controllers
+- [ ] Tests for view
+- [ ] Authorization system
+- [ ] Rubocop
+- [ ] Codeclimate
+- [ ] Add images at the cars
