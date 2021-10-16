@@ -1,0 +1,42 @@
+<%= form_with model: car do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+    <% car.errors.full_messages_for(:name).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :description %><br>
+    <%= form.text_area :description %>
+    <% car.errors.full_messages_for(:description).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :status %><br>
+    <%= form.select :status, ['new', 'used'], selected: 'new' %>
+  </div>
+
+  <div>
+    <%= form.label :manufactured_at %><br>
+    <%= form.date_field :manufactured_at %>
+    <% car.errors.full_messages_for(:manufactured_at).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :table_price %><br>
+    <%= form.number_field :table_price %>
+    <% car.errors.full_messages_for(:table_price).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,18 @@
+<h1><%= @car.name %></h1>
+
+<p><%= @car.status %></p>
+<p><%= @car.description %></p>
+<p><%= @car.manufactured_at %></p>
+<p><%= @car.table_price %></p>
+<p><%= @car.sale_price %></p>
+
+<ul>
+  <li><%= link_to "Go Back", "/" %></li>
+  <li><%= link_to "Edit", edit_car_path(@car) %></li>
+  <li>
+    <%=
+      link_to "Destroy",
+      car_path(@car), method: :delete, data: { confirm: "Are you sure?" }
+    %>
+  </li>
+</ul>

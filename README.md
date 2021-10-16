@@ -5,16 +5,16 @@ Create a small Ruby on Rails application that can do basic inventory management 
 ## Specifications
 
 - [ ] Users can log in and can have type “user” or “admin”
-- [ ] Users can view the inventory of cars and their details
+- [x] Users can view the inventory of cars and their details
 - [ ] “Admin” users can add and delete cars from the inventory
 - [ ] Cars are located at a dealership, there may be multiple dealerships
 
 About the cars
-- [ ] Have a monetary price. The price depreciates 2% every month.
-- [ ] Can be new or used
+- [x] Have a monetary price. The price depreciates 2% every month.
+- [x] Can be new or used
 
 Please include at least two tests
-- [ ] You may choose which kind of tests to write (unit, integration...)
+- [x] You may choose which kind of tests to write (unit, integration...)
 
 
 ## Setup Ruby (only if you have not installed)
