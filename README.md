@@ -6,7 +6,7 @@ Create a small Ruby on Rails application that can do basic inventory management 
 
 - [ ] Users can log in and can have type “user” or “admin”
 - [x] Users can view the inventory of cars and their details
-- [ ] “Admin” users can add and delete cars from the inventory
+- [x] “Admin” users can add and delete cars from the inventory
 - [ ] Cars are located at a dealership, there may be multiple dealerships
 
 About the cars
@@ -44,3 +44,8 @@ $ gem install bundler
 # run bundle to install gems
 $ bundle
 ```
+
+## Admin user
+
+username: admin
+password: secret
