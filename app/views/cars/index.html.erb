@@ -1,0 +1,14 @@
+<h1>Cars</h1>
+
+<%= link_to "New Car", new_car_path %>
+
+<ul>
+  <% @cars.each do |car| %>
+    <li>
+      <%= link_to car.name, car %>
+      <%= car.description %>
+      <%= car.sale_price %>
+      <%= car.manufactured_at %>
+    </li>
+  <% end %>
+</ul>
