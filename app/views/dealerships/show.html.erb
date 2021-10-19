@@ -1,0 +1,14 @@
+<h1><%= @dealership.name %></h1>
+
+<p><%= @dealership.description %></p>
+
+<ul>
+  <li><%= link_to "Go Back", dealerships_path %></li>
+  <li><%= link_to "Edit", edit_dealership_path(@dealership) %></li>
+  <li>
+    <%=
+      link_to "Destroy",
+      dealership_path(@dealership), method: :delete, data: { confirm: "Are you sure?" }
+    %>
+  </li>
+</ul>
