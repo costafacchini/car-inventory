@@ -1,4 +1,6 @@
 class Car < ApplicationRecord
+  belongs_to :dealership, required: true
+
   enum status: { new: 0, used: 1 }, _prefix: true
 
   validates :manufactured_at, presence: true
