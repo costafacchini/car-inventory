@@ -37,6 +37,13 @@
   </div>
 
   <div>
+  <%= collection_select(:car, :dealership_id, Dealership.all, :id, :name) %>
+  <% car.errors.full_messages_for(:dealership_id).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>

@@ -7,7 +7,7 @@ Create a small Ruby on Rails application that can do basic inventory management 
 - [ ] Users can log in and can have type “user” or “admin”
 - [x] Users can view the inventory of cars and their details
 - [x] “Admin” users can add and delete cars from the inventory
-- [ ] Cars are located at a dealership, there may be multiple dealerships
+- [x] Cars are located at a dealership, there may be multiple dealerships
 
 About the cars
 - [x] Have a monetary price. The price depreciates 2% every month.
@@ -66,8 +66,8 @@ In the next step I would develop more complete authentication.
 
 ## Improvements
 
-- [ ] Create dealership
-- [ ] Add relationship between car and dealership
+- [x] Create dealership
+- [x] Add relationship between car and dealership
 - [ ] Tests to controllers
 - [ ] Tests for view
 - [ ] Authorization system

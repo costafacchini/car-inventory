@@ -1,6 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Car, type: :model do
+  describe '#dealership' do
+    it { is_expected.to belong_to(:dealership).required }
+  end
+
   describe '#name' do
     it { is_expected.to validate_presence_of :name }
   end

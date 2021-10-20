@@ -1,0 +1,12 @@
+<h1>Dealerships</h1>
+
+<%= link_to "New Dealership", new_dealership_path %>
+
+<ul>
+  <% @dealerships.each do |dealership| %>
+    <li>
+      <%= link_to dealership.name, dealership %>
+      <%= dealership.description %>
+    </li>
+  <% end %>
+</ul>
