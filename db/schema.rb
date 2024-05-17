@@ -10,16 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_19_233454) do
-
+ActiveRecord::Schema[7.1].define(version: 2024_05_17_011833) do
   create_table "cars", force: :cascade do |t|
     t.integer "status", default: 0
     t.string "name"
     t.string "description"
-    t.datetime "manufactured_at", null: false
+    t.datetime "manufactured_at", precision: nil, null: false
     t.decimal "table_price", precision: 18, scale: 2, default: "0.0", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.integer "dealership_id"
     t.index ["dealership_id"], name: "index_cars_on_dealership_id"
   end
@@ -27,8 +26,8 @@ ActiveRecord::Schema.define(version: 2021_10_19_233454) do
   create_table "dealerships", force: :cascade do |t|
     t.string "name"
     t.string "description"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_foreign_key "cars", "dealerships"
