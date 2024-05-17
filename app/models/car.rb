@@ -25,6 +25,6 @@ class Car < ApplicationRecord
   end
 
   def months_quantity
-    (Time.new.year * 12 + Time.new.month) - (manufactured_at.year * 12 + manufactured_at.month)
+    (Time.now.year * 12 + Time.now.month) - (manufactured_at.year * 12 + manufactured_at.month)
   end
 end
