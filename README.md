@@ -68,6 +68,7 @@ In the next step I would develop more complete authentication.
 
 - [x] Create dealership
 - [x] Add relationship between car and dealership
+- [x] Tests to routes
 - [ ] Tests to controllers
 - [ ] Tests for view
 - [ ] Authorization system
