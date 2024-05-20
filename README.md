@@ -62,14 +62,14 @@ In the next step I would develop more complete authentication.
 
 ## About the time
 
-3 hours
+- hours
 
 ## Improvements
 
 - [x] Create dealership
 - [x] Add relationship between car and dealership
 - [x] Tests to routes
-- [ ] Tests to controllers
+- [x] Tests to controllers (requests)
 - [ ] Tests for view
 - [ ] Authorization system
 - [ ] Rubocop
